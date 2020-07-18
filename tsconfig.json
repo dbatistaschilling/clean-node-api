@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist", // Tells node where to generate the JS code
+		"module": "commonjs", // Allows node to understand the new import & export features
+		"target": "es2019", // Generate JS on this specific version
+		"esModuleInterop": true, // Converts the modules that uses common JS
+		"allowJs": true
+	}
+}
