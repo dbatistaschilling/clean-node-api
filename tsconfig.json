@@ -5,5 +5,8 @@
 		"target": "es2019", // Generate JS on this specific version
 		"esModuleInterop": true, // Converts the modules that uses common JS
 		"allowJs": true
-	}
+	},
+    "typeAcquisition": {
+        "include": ["src", "test"]
+    }
 }
