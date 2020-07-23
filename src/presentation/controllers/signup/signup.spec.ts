@@ -166,9 +166,9 @@ describe('Signup Controller', () => {
     expect(httpResponse.body).toEqual(new InvalidParamError('passwordConfirmation'))
   })
 
-  test('should call EmailValidator with correct email', async () => {
+  test('should call AddAccount with correct values', async () => {
     const { sut, addAccountStub } = makeSut()
-    const addSpy = jest.spyOn(addAccountStub, 'add').mockReturnValueOnce(false)
+    const addSpy = jest.spyOn(addAccountStub, 'add')
     const httpRequest = {
       body: {
         name: 'any_name',
