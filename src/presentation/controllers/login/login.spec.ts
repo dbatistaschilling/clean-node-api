@@ -3,13 +3,6 @@ import { badRequest } from './../../helpers/http-helper'
 import { MissingParamError, InvalidParamError } from './../../errors'
 import { LoginController } from './login'
 
-const makeLoginRequest = (): any => ({
-  body: {
-    email: 'any_email@mail.com',
-    password: 'any_password'
-  }
-})
-
 const makeEmailValidator = (): EmailValidator => {
   class EmailValidatorStub implements EmailValidator {
     isValid (email: string): boolean {
